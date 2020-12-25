@@ -16,7 +16,7 @@ $ go run littleExplorer.go
 
 ```
 **Step #2.**
-You will be prompted to enter the [NASA's API Key.](https://api.nasa.gov/){:target="_blank} Enter your API Key from [NASA's portal](https://api.nasa.gov/){:target="_blank} (if you have one) otherwise `DEMO_KEY` will be used.
+You will be prompted to enter the [NASA's API Key.](https://api.nasa.gov/){:target="_blank"} Enter your API Key from [NASA's portal](https://api.nasa.gov/){:target="_blank"} (if you have one) otherwise `DEMO_KEY` will be used.
 
 **Step #3.**
 Open a browser and run the server locally by using `localhost:3000/apod/2020-12-25`. This will call the NASA's APOD API and return the picture of the date given at the address bar (2020-12-25). You may also not entering any date at all, like `localhost:3000/apod`, and in that case, the current day's picture of the day will be returned.

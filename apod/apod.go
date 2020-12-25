@@ -83,6 +83,7 @@ const (
 func init() {
 	fmt.Println()
 	log.Println("__INIT__: APOD Initiallization. init() is running.")
+	var err error // handling the errors.
 
 	/* Authenticate to API & create the "Today" query */
 	apodQuery.APIKey = GetApodAPIKey()     // user enters the API Key...
@@ -90,7 +91,6 @@ func init() {
 	apodQuery.HD = "True"                  // Default: True (if applicable).
 
 	// Template preparation.
-	var err error                                                // handling the errors.
 	apodTmpl = template.New("apod")                              // create a new template.
 	apodTmpl, err = apodTmpl.ParseFiles("server/html/apod.html") // parse the body file.
 	checkError("Error parsing file", err)                        // check for error.

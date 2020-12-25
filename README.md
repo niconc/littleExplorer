@@ -1,6 +1,6 @@
-# Little Explorer
+# Little Explorer.
 
-A server-to-server web app to consume NASA API's portal. APOD (Astronomy Picture Of the Day) API consuming is now implemented. More API's will follow.
+A server-to-server web app to consume <a href="https://api.nasa.gov/" target="_blank">NASA's API portal.</a> APOD (Astronomy Picture Of the Day) API consuming is now implemented. More API's from the portal will follow.
 
 ## Installation.
 `cd` to `$GOPATH/src/github` directory of your Go installation and clone with the following command:

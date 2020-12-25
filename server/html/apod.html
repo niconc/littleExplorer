@@ -1,0 +1,26 @@
+{{define "apod"}}
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="utf-8">
+    <title>APOD {{ .Date }}</title>
+  </header>
+  <body>
+    <h1>APOD: {{ .Title }}</h1>
+    <h3>Date: {{ .Date }}</h3>
+    <p>{{ .Explanation }}</p>
+    <p>{{ if .HDUrl }}
+      <b>HD URL: </b><a href="{{ .HDUrl }}" target="_blank">{{ .HDUrl }}</a>
+      {{ end }}
+    </p>
+    <p>Media Type: {{ .MediaType }}</p>
+    <p>Service Version: {{ .ServiceVersion }}</p>
+    <p>{{ if .Copyright }}
+      <b><u><em>Copyright © {{ .Copyright }}</em></u></b>
+      {{ end }}
+    </p>
+    <p><a href="{{ .URL}}" target="_blank">Display the picture in new window.</a></p>
+    <img src="{{ .URL}}" alt="Astronomy picture of the day.">
+  </body>
+</html>
+{{end}}

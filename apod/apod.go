@@ -203,7 +203,7 @@ func processTheResponse(resp *http.Response) []byte {
 	rateLm, _ = strconv.Atoi(respHeader.Get("X-Ratelimit-Limit"))       // rate.
 	usageDet, _ = strconv.Atoi(respHeader.Get("X-Ratelimit-Remaining")) // usage.
 	log.Printf("API Hourly Rate Limit: %d\n", rateLm)
-	log.Printf("API Usage Details: %d calls made, %d calls or %.2f%% of total calls remaining.\n", (rateLm - usageDet), usageDet, ((float64(usageDet) / float64(rateLm)) * 100))
+	log.Printf("API Usage Details: %d calls made, %d / %.2f%% of total calls remaining.\n", (rateLm - usageDet), usageDet, ((float64(usageDet) / float64(rateLm)) * 100))
 
 	/* Check the response status */
 	// NEEDS MORE WORK HERE FOR 4xx, 5xx RESPONSES.

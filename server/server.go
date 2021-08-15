@@ -3,9 +3,10 @@
 package server
 
 import (
-	"littleExplorer/apod"
 	"log"
 	"net/http"
+
+	"github.com/niconc/littleExplorer/apod"
 )
 
 // Server setup and go online the server.

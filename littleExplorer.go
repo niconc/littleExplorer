@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"littleExplorer/server"
 	"log"
+
+	"github.com/niconc/littleExplorer/server"
 )
 
 func init() {

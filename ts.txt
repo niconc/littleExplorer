@@ -1,0 +1,11 @@
+total 32
+drwxr-xr-x  10 niconc  staff   320 Feb  1 11:34 .
+drwxr-xr-x   3 niconc  staff    96 Feb  1 11:25 ..
+drwxr-xr-x  12 niconc  staff   384 Feb  1 11:25 .git
+-rw-r--r--   1 niconc  staff   719 Feb  1 11:25 .gitignore
+-rw-r--r--   1 niconc  staff  1285 Feb  1 11:25 README.md
+drwxr-xr-x   3 niconc  staff    96 Feb  1 11:25 apod
+-rw-r--r--   1 niconc  staff    49 Feb  1 11:25 go.mod
+-rw-r--r--   1 niconc  staff   537 Feb  1 11:25 littleExplorer.go
+drwxr-xr-x   5 niconc  staff   160 Feb  1 11:25 server
+-rw-r--r--   1 niconc  staff     0 Feb  1 11:35 ts.txt
